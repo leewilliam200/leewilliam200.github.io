@@ -1,38 +1,309 @@
-.App {
+@font-face {
+  font-family: textFont;
+  src: url('./components/bahnschrift.ttf');
+}
+
+html, body, #root, .App {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: 0;
+  background-color: #293967;
+  font-family: textFont;
+  color: #BADEFC;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.logo-container {
+  width: 70%;
+}
+
+.logo-button {
+  cursor: pointer;
+  height: 60px;
+  width: 100px;
+  margin-left: 25px;
+  margin-right: 50px;
+}
+
+.button {
+  color: white;
+  cursor: pointer;
+  font-family: textFont;
+  font-size: 20px;
+  border-right: 1px solid white;
+  border-left-color: white;
+  width: 10%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.final-button {
+  color: white;
+  cursor: pointer;
+  font-family: textFont;
+  font-size: 20px;
+  width: 10%;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Link {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainCont {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 90%;
+  width: 100%;
+  align-self: center;
+  background-color: #293967;
+}
+
+.introCont {
+  display: flex;
+  flex-direction: column;
+  font-family: textFont;
+  height: 1000px;
+  width: 45%;
+  padding-top: 350px;
+  padding-bottom: 300px;
+  align-self: center;
+  background-color: #293967;
+}
+
+.aboutCont {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+  font-family: textFont;
+  width: 45%;
+  height: 1500px;
+  padding-top: 400px;
+  padding-bottom: 400px;
+  align-self: center;
+}
+
+.aboutCont.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.projectCont {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+  font-family: textFont;
+  width: 45%;
+  height: 1500px;
+  padding-top: 400px;
+  align-self: center;
+  padding-bottom: 200px;
+}
+
+.projectCont.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.projectInfoContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-self:center;
+}
+
+.projectImg {
+  width: 100%;
+  object-fit: contain;
+  padding-bottom: 20px;
+}
+
+.projectInfo {
+  padding-left: 20px;
+}
+
+.projectDesc {
+  padding-bottom: 100px;
+  float:right;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 300px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  background-color: #293967
+}
+
+.project:not(:first-child) {
+  margin-left: -50px;
+}
+
+.project:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.project:hover ~ .project {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.projectTitle {
+  color: #BADEFC;
+  align-self: center;
+  font-weight: bold;
+  left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px black;
+}
+
+.highlight {
+  color: #5BFFF4;
+}
+
+.highlightCard {
+  color: #5BFFF4;
+}
+
+p1 {
+  font-size: 80px;
   color: white;
+  text-shadow: 2px 2px black;
 }
 
-.App-link {
-  color: #61dafb;
+p2 {
+  font-size: 34px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+p3 {
+  font-size: 16px;
+  color: #C2C2C2;
+}
+
+hr.break {
+  border-top: 1px solid white;
+  width: 50%;
+  align-self: center;
+}
+
+.navbar-custom {
+  background-color: #17183B;
+}
+
+.navBar {
+  display: flex;
+  align-content: flex-start;
+  width: 100%;
+  height: 10%;
+  margin: 0;
+}
+
+.contact {
+  color: white;
+  text-decoration: none;
+}
+
+.contactButton {
+  position: relative;
+  margin: auto;
+  padding: 8px 12px;
+  transition: all .2s ease; }
+  .contactButton:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(23, 24, 59, 0.5);
+    width: 40px;
+    height: 40px;
+    transition: all .3s ease; }
+  .contactButton p3 {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    vertical-align: middle; }
+  .contactButton svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: white;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all .3s ease; }
+  .contactButton:hover:before {
+    width: 100%;
+    background: rgba(23, 24, 59, 1); }
+  .contactButton:hover svg {
+    transform: translateX(0); }
+  .contactButton:active {
+    transform: scale(0.96); }
+
+.contactCont {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+  font-family: textFont;
+  width: 45%;
+  height: 1500px;
+  padding-top: 400px;
+  padding-bottom: 400px;
+  align-self: center;
+}
+
+.contactCont.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+
+@media screen and (max-width: 800px) {
+  .projectInfo {
+    font-size: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .highlightCard {
+    font-size: 10px;
+  }
+
+  .projectTitle {
+    font-size: 20px;
   }
 }
