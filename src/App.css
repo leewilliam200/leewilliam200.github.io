@@ -21,7 +21,7 @@ html, body, #root, .App {
 }
 
 .logo-container {
-  width: 70%;
+  width: 70vw;
 }
 
 .logo-button {
@@ -39,7 +39,8 @@ html, body, #root, .App {
   font-size: 20px;
   border-right: 1px solid white;
   border-left-color: white;
-  width: 10%;
+  width: 10vw;
+  min-width: 80px;
   text-align: center;
 }
 
@@ -49,6 +50,7 @@ html, body, #root, .App {
   font-family: textFont;
   font-size: 20px;
   width: 10%;
+  min-width: 80px;
   text-align: center;
 }
 
@@ -132,6 +134,9 @@ html, body, #root, .App {
   width: 100%;
   object-fit: contain;
   padding-bottom: 20px;
+  max-height: 400px;
+  text-align: center;
+  align-self: center;
 }
 
 .projectInfo {
@@ -146,12 +151,11 @@ html, body, #root, .App {
 .project {
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: 430px;
   width: 300px;
   background-color: #17141d;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
-/*   margin-left: -50px; */
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
@@ -179,8 +183,18 @@ html, body, #root, .App {
   font-weight: bold;
   left: 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: center;
   text-shadow: 1px 1px black;
+}
+
+.projectPage {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-top: 150px;
+  align-items: center;
 }
 
 .highlight {
@@ -222,6 +236,10 @@ hr.break {
   width: 100%;
   height: 10%;
   margin: 0;
+
+  -webkit-box-shadow: 0px 4px 8px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 8px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 8px 2px rgba(0,0,0,0.75);
 }
 
 .contact {
@@ -293,17 +311,72 @@ hr.break {
   visibility: visible;
 }
 
+li {
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px black;
+}
 
-@media screen and (max-width: 800px) {
-  .projectInfo {
-    font-size: 10px;
-  }
+ul::before {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-type: "✓  ";
+}
 
-  .highlightCard {
-    font-size: 10px;
+.skillList {
+  width: 60%;
+  align-self: center;
+}
+
+.leftCol {
+  float: left; 
+  width: 50%;
+}
+
+.rightCol {
+  float: right;
+  width: 50%;
+}
+
+.leftList {
+  float: right;
+}
+
+@media screen and (max-width: 1400px) {
+  .project {
+    width: 100%;
   }
 
   .projectTitle {
     font-size: 20px;
+  }
+
+  .projectInfo {
+    font-size: 15px;
+  }
+
+  .highlightCard {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .projectInfoContainer {
+    flex-direction: column;
+  }
+
+  .project:not(:first-child) {
+    margin-left: 0px;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .projectCont {
+    height: 3000px;
+    width: 60%;
+    align-items: center;
   }
 }

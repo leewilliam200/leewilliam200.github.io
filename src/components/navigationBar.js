@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar } from 'react-bootstrap';
 import logo from './logo.png';
 
-export const NavigationBar = () => {
+export const HomeNavBar = () => {
     const homeRedirect = () => {
         const section = document.querySelector( '.introCont' );
         section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
@@ -35,4 +35,4 @@ export const NavigationBar = () => {
     )
 }
 
-export default NavigationBar
+export default HomeNavBar
