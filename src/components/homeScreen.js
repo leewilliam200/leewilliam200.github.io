@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import HomeNavBar from './navigationBar';
 
 /*
- Implemented using a <p3 className="highlight"> Vue.js </p3> frontend and an API created using 
+ Implemented using a <p3 className="highlight"> Vue.js </p3> frontend and an API created using
                         <p3 className="highlight"> Flask </p3> and deployed on <p3 className="highlight"> Heroku </p3>
 */
 export const Home = () => {
@@ -64,7 +64,7 @@ export const Home = () => {
             <div className='introCont'>
                 <p2>Hey there! My name is</p2>
                 <p1>William Lee.</p1>
-                <p3>I'm a <p3 className="highlight"> software engineering </p3> student based in Sydney with a passion to tackle whatever challenge I am
+                <p3>I'm a <p3 className="highlight"> second-year software engineering </p3> graduate based in Sydney with a passion to tackle whatever challenge I am
                     faced with. I enjoy <p3 className="highlight"> learning </p3> new things and <p3 className="highlight"> innovating </p3> to create something unique. </p3>
                 <br></br><br></br>
                 <div className="contactButton" onClick={contactRedirect}>
@@ -79,18 +79,17 @@ export const Home = () => {
             <div id="about" className={`aboutCont ${isAboutVisible ? 'is-visible' : ''}`} ref={aboutRef}>
                 <p1>About Me!</p1>
                 <p3>
-                    Hi! I'm currently pursuing my <p3 className="highlight"> Bachelor of Software Engineering </p3> at UNSW and I'm in my 
-                    <p3 className="highlight"> final </p3> year. Right now I'm searching for an internship to gain some experience within 
-                    the industry and to see what <p3 className="highlight"> impact </p3> I can have on the technical world through my work. 
+                    Hi! I recently graduated with a<p3 className="highlight"> Bachelor of Software Engineering </p3> at UNSW and have nearly
+                    <p3 className="highlight"> two </p3> years of professional experience. I'm eager to continue building my career in the tech industry and
+                    make a meaningful <p3 className="highlight"> impact </p3> through my work.
                 </p3><br></br>
                 <p3>
-                    Some <p3 className="highlight"> achievements </p3> that I have was being <p3 className="highlight"> selected </p3> for the UNSW DESN2000 pitch 
+                    During my time at UNSW, I was<p3 className="highlight"> selected </p3> for the UNSW DESN2000 pitch
                     showcase in 2020 with a prototype public transport application and I was <p3 className="highlight"> nominated </p3> for the UNSW SENG3011
-                    Optiver Prize in 2021 for an epidemiology web application. 
+                    Optiver Prize in 2021 for an epidemiology web application.
                 </p3><br></br>
                 <p3>
-                    If you keep scrolling you'll be able to see some of the projects that I have created and you'll have a better understanding of the skills I have developed
-                    over the years. Enjoy your stay and I hope you'll learn at least a little bit more about me!
+                    Feel free to explore my portfolio to see the projects I've worked on and the skills I've developed. Enjoy your stay and I hope you'll learn at least a little bit more about me!
                 </p3>
             </div>
             <hr className="break"></hr>
@@ -99,13 +98,12 @@ export const Home = () => {
                     <p1>My Projects</p1><br></br>
                     <p3>Here are some of the projects that I've developed over the years and what skills I have obtained in my short history of coding so far. You can click on
                         each card to see more information about the project and what skills I had developed. </p3><br></br><br></br>
-                    <p3>Currently, I'm also working on a thesis based on evaluating machine learning approaches to detect personality traits through an individual's writing.</p3>
                 </div>
                 <div className="projectInfoContainer">
                     <div className='project' onClick={handleWordleBot}>
                         <p2 className="projectTitle">Wordle Bot</p2>
                         <img className="projectImg" variant='top' src={wordleThumbnail}></img>
-                        <p3 className="projectInfo">A <p3 className="highlightCard"> machine learning </p3> algorithm implemented using 
+                        <p3 className="projectInfo">A <p3 className="highlightCard"> machine learning </p3> algorithm implemented using
                         <p3 className="highlightCard"> Pytorch </p3> on a Wordle replica created in <p3 className="highlightCard"> Pygame.</p3></p3>
                     </div>
                     <div className='project' onClick={handleProdiff}>
@@ -117,14 +115,14 @@ export const Home = () => {
                     <div className='project' onClick={handlePromed}>
                         <p2 className="projectTitle">Disease Report Daily</p2>
                         <img className="projectImg" variant='top' src={promedThumbnail}></img>
-                        <p3 className="projectInfo">A <p3 className="highlightCard"> web application </p3> that displays disease reports and recent social 
+                        <p3 className="projectInfo">A <p3 className="highlightCard"> web application </p3> that displays disease reports and recent social
                         media posts for chosen diseases which sends a <p3 className="highlightCard"> daily </p3> email with any recent updates.</p3>
                     </div>
                     <div className='project' onClick={handleTransportme}>
                     <p2 className="projectTitle">transport.me</p2>
                         <img className="projectImg" variant='top' src={litRailThumbnail}></img>
-                        <p3 className="projectInfo">A prototype <p3 className="highlightCard"> public transport scheduling </p3> application where 
-                        users can filter options to find their most <p3 className="highlightCard"> efficient </p3> route and see 
+                        <p3 className="projectInfo">A prototype <p3 className="highlightCard"> public transport scheduling </p3> application where
+                        users can filter options to find their most <p3 className="highlightCard"> efficient </p3> route and see
                         <p3 className="highlightCard"> live </p3> traffic information. </p3>
                     </div>
                 </div>
