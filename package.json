@@ -5,6 +5,7 @@
   "homepage": "https://leewilliam200.github.io",
   "dependencies": {
     "-": "0.0.1",
+    "@eslint/js": "~9.9.0",
     "@testing-library/jest-dom": "~5.16.3",
     "@testing-library/react": "~12.1.4",
     "@testing-library/user-event": "~13.5.0",
@@ -44,5 +45,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "~7.25.2",
+    "@babel/eslint-parser": "~7.25.1",
+    "@babel/preset-env": "~7.25.3",
+    "@babel/preset-react": "~7.24.7",
+    "eslint": "~8.57.0",
+    "eslint-plugin-react": "~7.35.0",
+    "eslint-plugin-react-hooks": "~4.6.2"
   }
 }
