@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar } from 'react-bootstrap';
-import logo from './logo.png';
+import logo from '../images/logo.png';
 
 export const HomeNavBar = () => {
     const homeRedirect = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from 'react-bootstrap';
-import logo from './logo.png';
-import prodiffThumbnail from './prodiffThumbnail.png';
+import logo from '../images/logo.png';
+import prodiffThumbnail from '../images/prodiffThumbnail.png';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -21,7 +21,7 @@ export const Prodiff = () => {
            <p1>Pro-diff</p1>
            <p3>Pro-diff is a web analytics tool that was created for the game League of Legends. It was created using Flask and jinja and the tool collects
                player specific data from the Riot API so the user can compare their statistics with other players. The tool also uses the Twitch API to present
-               streams to the user and the tool also uses information from the Leaguepedia API to access statistics from professional players. 
+               streams to the user and the tool also uses information from the Leaguepedia API to access statistics from professional players.
            </p3>
            <br></br>
            <div className="skillList">

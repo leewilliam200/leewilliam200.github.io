@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from 'react-bootstrap';
-import logo from './logo.png';
-import wordleThumbnail from './wordleThumbnail.png';
+import logo from '../images/logo.png';
+import wordleThumbnail from '../images/wordleThumbnail.png';
 import { useNavigate } from 'react-router-dom';
 
 export const WordleBot = () => {
@@ -18,9 +18,9 @@ export const WordleBot = () => {
         <div className="projectPage">
            <img className="projectImg" src={wordleThumbnail}></img>
            <p1>Wordle Bot</p1>
-           <p3>Wordle Bot is a machine learning algorithm developed using Pytorch. The base game is a replica of the popular game Wordle created in Pygame. 
+           <p3>Wordle Bot is a machine learning algorithm developed using Pytorch. The base game is a replica of the popular game Wordle created in Pygame.
                The algorithm receives rewards based on the game state and continues to build upon itself after each generation
-               to maximise the reward for the algorithm. 
+               to maximise the reward for the algorithm.
            </p3>
            <br></br>
            <div className="skillList">
