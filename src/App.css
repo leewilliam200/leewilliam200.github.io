@@ -32,6 +32,17 @@ html, body, #root, .App {
   margin-right: 50px;
 }
 
+.timeline-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
 .button {
   color: white;
   cursor: pointer;
@@ -90,8 +101,7 @@ html, body, #root, .App {
   font-family: textFont;
   width: 45%;
   height: 1500px;
-  padding-top: 400px;
-  padding-bottom: 400px;
+  /*padding-bottom: 400px;*/
   align-self: center;
 }
 
@@ -305,6 +315,11 @@ hr.break {
   align-self: center;
 }
 
+.timelineCont {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .contactCont.is-visible {
   opacity: 1;
   transform: none;
@@ -330,7 +345,7 @@ ul::before {
 }
 
 .leftCol {
-  float: left; 
+  float: left;
   width: 50%;
 }
 
