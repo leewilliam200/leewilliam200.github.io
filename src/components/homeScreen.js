@@ -6,6 +6,20 @@ import litRailThumbnail from '../images/litRailThumbnail.png';
 import { useNavigate } from 'react-router-dom';
 import HomeNavBar from './navigationBar';
 import Timeline from './timeline/timeline';
+import { GitHub, LinkedIn } from '@material-ui/icons';
+
+const iconStyle = {
+    height: '45px',
+    width: '45px',
+    marginRight: '50px',
+    cursor: 'pointer',
+    color: '#fff',
+}
+
+const leftIconStyle = {
+    ...iconStyle,
+    marginRight: '50px',
+}
 
 export const Home = () => {
     const [isAboutVisible, setAboutVisible] = React.useState(true);
@@ -157,6 +171,12 @@ export const Home = () => {
                     in the past
                     I'd be happy to answer anything that is sent my way.
                 </p3>
+                <div className="linksCont">
+                    <LinkedIn style={leftIconStyle}
+                              onClick={() => window.open('https://www.linkedin.com/in/william-lee-59559b23b/')}/>
+                    <GitHub style={iconStyle}
+                            onClick={() => window.open('https://github.com/leewilliam200')}/>
+                </div>
             </div>
         </div>
     )
