@@ -1,8 +1,8 @@
 import React from 'react';
-import wordleThumbnail from './wordleThumbnail.png';
-import prodiffThumbnail from './prodiffThumbnail.png';
-import promedThumbnail from './promedThumbnail.png';
-import litRailThumbnail from './litRailThumbnail.png';
+import wordleThumbnail from '../images/wordleThumbnail.png';
+import prodiffThumbnail from '../images/prodiffThumbnail.png';
+import promedThumbnail from '../images/promedThumbnail.png';
+import litRailThumbnail from '../images/litRailThumbnail.png';
 import { useNavigate } from 'react-router-dom';
 import HomeNavBar from './navigationBar';
 
