@@ -75,7 +75,7 @@ export const Home = () => {
             <div className='introCont'>
                 <p2>Hey there! My name is</p2>
                 <p1>William Lee.</p1>
-                <p3>I'm a <p3 className="highlight"> second-year software engineering </p3> graduate based in Sydney with a passion to tackle whatever
+                <p3>I'm a <p3 className="highlight"> third-year software engineer </p3> based in Sydney with a passion to tackle whatever
                     challenge I am
                     faced with. I enjoy <p3 className="highlight"> learning </p3> new things and <p3 className="highlight"> innovating </p3> to create
                     something unique.
@@ -93,10 +93,9 @@ export const Home = () => {
             <div id="about" className={`aboutCont ${isAboutVisible ? 'is-visible' : ''}`} ref={aboutRef}>
                 <p1>About Me!</p1>
                 <p3>
-                    Hi! I recently graduated with a
-                    <p3 className="highlight"> Bachelor of Software Engineering </p3>
-                    at UNSW and have nearly
-                    <p3 className="highlight"> two </p3> years of professional experience. I'm eager to continue building my career in the tech
+                    Hi! I am a UNSW graduate with a
+                    <p3 className="highlight"> Bachelor of Software Engineering (Honours) </p3>and I have nearly
+                    <p3 className="highlight"> three </p3> years of professional experience. I'm eager to continue building my career in the tech
                     industry and
                     make a meaningful <p3 className="highlight"> impact </p3> through my work.
                 </p3>

@@ -30,7 +30,27 @@ export const Timeline = () => {
                     boxShadow: '0rem 0 2rem #000',
                 }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                date="Jan 2023 - present"
+                date="Jan 2025 - present"
+                iconStyle={{
+                    background: '#fff',
+                }}
+                icon={<Logo imagePath={sjLogo}/>}
+            >
+                <h3 className="vertical-timeline-element-title">Software Engineer</h3>
+                <h4 className="vertical-timeline-element-subtitle">Sydney</h4>
+                <p>
+                    Java, Apache Kafka, Spring, Python, MongoDB, Typescript, React Native, ReactJS, Agile, Project Management
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{
+                    background: '#17183B',
+                    color: '#fff',
+                    boxShadow: '0rem 0 2rem #000',
+                }}
+                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                date="Jan 2023 - Dec 2024"
                 iconStyle={{
                     background: '#fff',
                 }}
